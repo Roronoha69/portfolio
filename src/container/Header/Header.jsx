@@ -26,7 +26,7 @@ const scaleVariants = {
 const Header = () => (
   <div className="app__header app__flex">
     <motion.div
-      whileInView={{ x: [-100, 0], opacity: [0, 1] }}
+      whileInView={{ x: [-150, 0], opacity: [0, 1] }}
       transition={{ duration: 0.5 }}
       className="app__header-info"
     >
@@ -37,8 +37,8 @@ const Header = () => (
           <div style={{ marginLeft: 20 }}>
             <p className="p-text"></p>
             <h1 className="head-text">Justin Mbodje</h1>
-            <p>Developpeur Frontend</p>
-            <p className="p-text">J'aime flamber mon argent dans les crypto mais j'aime encore plus créer des sites beaux et fonctionel</p>
+            <p>Développeur</p>
+            <p className="p-text">Étudiant en informatique. Je cherche à approfondir ma compréhension de divers domaines de technologies et de développement de produits</p>
           </div>
         </div>
         
@@ -82,21 +82,21 @@ const Header = () => (
       whileInView={scaleVariants.whileInView}
       className="app__header-circles"
     >
-     <a href="#xprience" key={`circle-1`}>
+     <a href="#contact" key={`circle-1`}>
         <div className="circle-cmp app__flex hovicon effect-8 misterOne" key={`circle-1`}>
          
-          <img src={images.xp} alt="profile_bg" />
+          <img src={images.mobile} alt="profile_bg" />
         </div>
         </a>
         
-        <a href="https://vip-list-club.netlify.app/" target="_blank"_ rel="noreferrer">
+        <a href="https://chat-app-justin.netlify.app/" target="_blank"_ rel="noreferrer">
         <div className="circle-cmp app__flex misterTwo hovicon effect-8" key={`circle-2`}>
          
          <img src={images.nftlogo} alt="profile_bg" />
        </div>
        </a>
        
-       <a href="https://www.notion.so/Hello-This-is-Justin-7ce141a9cb64438eb600ea347c2494d4" target="_blank"_ rel="noreferrer">
+       <a href='/cv' target="_blank"_ rel="noreferrer">
        <div className="circle-cmp app__flex hovicon effect-8 misterThree" key={`circle-3`}>
          
          <img src={images.notion} alt="profile_bg " />

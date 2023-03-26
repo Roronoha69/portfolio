@@ -35,14 +35,14 @@ const Footer = () => {
       .catch((err) => console.log(err));
   };
 
-  return (
+  return ( 
     <>
       <h2 className="head-text">Me Contacter</h2>
 
       <div className="app__footer-cards">
         <div className="app__footer-card ">
           <img src={images.email} alt="email" />
-          <a href="mailto:mbodje.justin@gmail.com" className="p-text">My personal email</a>
+          <a href="mailto:mbodje.justin@gmail.com" className="p-text">mbodje.justin@gmail.com</a>
         </div>
         <div className="app__footer-card">
           <img src={images.mobile} alt="phone" />

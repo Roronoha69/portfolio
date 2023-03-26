@@ -20,6 +20,7 @@ import vue from '../assets/vue.png';
 import eth from '../assets/logo_eth.png'
 import rails from '../assets/logo_rails.png'
 import solidity from '../assets/soliditylogo.png'
+import mongo from '../assets/mogo.jpg'
 
 import about01 from '../assets/about01.png';
 import about02 from '../assets/about02.png';
@@ -33,8 +34,9 @@ import circle from '../assets/circle.svg';
 import logo from '../assets/logo.png';
 
 import nftlogo from '../assets/nft-logo.png'
-import notion from '../assets/notion-logo.png'
-import xp from '../assets/xp.png'
+import notion from '../assets/cv.png'
+import xp from '../assets/contct.png'
+
 
 
 export default {
@@ -47,7 +49,7 @@ export default {
   flutter,
   git,
   graphql,
-
+  mongo,
   javascript,
   mu5,
   node,

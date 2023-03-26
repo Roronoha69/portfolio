@@ -1,0 +1,215 @@
+.retour{
+    position: absolute;
+    top:5%;
+    left: 5%;
+
+
+
+    a{
+        padding: 0.5rem 1rem;
+        border-radius: 10px;
+        background-color: black;
+        color: white;
+        text-decoration: none;
+    }
+    a:hover{
+        cursor: pointer;
+    }
+}
+
+.retour:hover{
+    cursor: pointer;
+}
+
+.project{
+   // background-color: black;
+
+ 
+     background: url("../../assets/bgIMG.png");
+     background-size: cover;
+     background-position: center;
+     
+
+     @media screen and (min-width: 1200px){
+          
+         height: 100vh;
+    }
+
+   
+    
+     color: rgb(0, 0, 0);
+
+
+ .head{
+     h1{
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+
+    @media screen and (max-width: 1200px){
+    
+              
+            
+            }
+
+     }
+
+    .techno{
+        display: flex;
+        justify-content: center;
+
+        @media screen and (max-width: 1200px){
+    
+                 flex-wrap: wrap;
+                
+              }
+
+        p{
+            padding: 0.5rem;
+            border: 1px solid rgb(0, 0, 0);
+            margin: 0.3rem;
+            font-size: 0.8rem;
+            display: flex;
+            @media screen and (max-width: 1200px){
+    
+                font-size: 0.7rem;  
+       
+            }
+           
+        }
+        
+
+    }
+ }
+
+ .content{
+     display: flex;
+     justify-content: space-around;
+     @media screen and (max-width: 1200px){
+        flex-wrap: wrap;
+
+    }
+
+    @media screen and (max-width: 700px){   
+        font-size: 0.7rem;  
+       align-items: center;
+       
+    }
+     
+     margin: 5% 4% 1%;
+
+     .left-content{
+         ul{
+             margin-top: 25px;
+         }
+         @media screen and (max-width: 700px){   
+           
+          width: 90vw;
+           
+        }
+
+
+    .link{
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+
+        a{
+        padding: 1rem 2rem;
+        border-radius: 10px;
+        border: none;
+        background-color: white;
+        text-decoration: none;
+        font-weight: 500;
+        color: black;
+        outline: none;
+        margin: 2rem;
+        font-family: var(--font-base);
+    
+        transition: cubic-bezier(0.55, 0.085, 0.68, 0.53);
+        cursor: pointer;
+
+        @media screen and (max-width: 1200px){   
+           
+           font-size: 0.8rem;
+           padding: 1rem 2rem;
+           margin: 1rem 0.5rem;
+           
+        }
+        
+        &:hover {
+        background-color: var(--secondary-color);
+        }
+    }
+  } 
+  .two{
+    margin-left: 2rem;
+    background-color: #ffffff;
+    
+    &:hover {
+        background-color: var(--secondary-color);
+    }
+  }
+     }
+
+
+     .right-content{
+
+        @media screen and (max-width: 1200px){   
+            
+            img{
+                width: 80vw;
+            }
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            flex-wrap: wrap;
+
+             
+          }
+         color: rgb(0, 0, 0);
+         height: 50vh;
+         @media screen and (min-width: 1200px){   
+         overflow-y: scroll;
+          scrollbar-width: thin;
+        scrollbar-color: rgb(255, 255, 255) rgb(0, 0, 0);
+           
+        }
+              
+
+        @media screen and (max-width: 1200px){
+            margin-top: 25px;
+            
+        }
+        @media screen and (min-width: 1200px){   
+              &::-webkit-scrollbar {
+            display: block;
+            width: 8px;
+            height: 8px;
+            background-color: rgba(0,0,0,0.2);;
+          }
+        
+          &::-webkit-scrollbar-thumb {
+            background-color: grey;
+          }
+      
+          }
+
+        
+     }
+
+     .images{
+        @media screen and (min-width: 1200px){   
+              scroll-snap-align: start;
+             
+          }
+    
+        
+      
+       
+        
+     }
+ }
+
+  }

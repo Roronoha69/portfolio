@@ -1,6 +1,7 @@
 import React from 'react'
 
-import {About, Footer, Header, Skills, Testimonial, Work, Smartcontract} from './container'
+import {About, Footer, Header, Skills, Testimonial, Work} from './container'
+import {Project1, Project2, Project3, Project4, Cv } from './project' 
 
 import {Route, Routes, BrowserRouter} from "react-router-dom";
 import { Navbar } from './components';
@@ -31,11 +32,11 @@ const App = () => {
             </div>
 
             <div className="container">
-            <Work/>
+            <Skills/>
             </div>
 
             <div className="container">
-            <Skills/>
+            <Work/>
             </div>
 
             <div className="container">
@@ -45,7 +46,14 @@ const App = () => {
             </section>
             </>}/>       
       
-            <Route path="/smartcontract" element={<Smartcontract/>}/>               
+             
+            <Route path="/vip-club" element={<Project1/>}/>   
+            <Route path="/twitter-bot" element={<Project2/>}/> 
+            <Route path="/zombiland-punk" element={<Project3/>}/> 
+            <Route path="/mates-makings" element={<Project4/>}/>
+            <Route path="/cv" element={<Cv/>}/>   
+   
+            
             </Routes>
           </BrowserRouter>
 

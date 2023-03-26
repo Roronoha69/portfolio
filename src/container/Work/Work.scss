@@ -11,7 +11,7 @@
     align-items: center;
     flex-wrap: wrap;
   
-    margin: 4rem 0 2rem;
+    margin: 2.5rem 0 1rem;
   
     .app__work-filter-item {
       padding: 0.5rem 1rem;
@@ -43,16 +43,21 @@
   
   .app__work-portfolio {
     display: flex;
+
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
   
     .app__work-item {
-      width: 270px;
+
+      @media screen and (min-width: 1200px) {
+        width: 16vw;
+      }
+      
       flex-direction: column;
   
-      margin: 2rem;
-      padding: 1rem;
+      margin: 1rem;
+      padding: 0.8rem;
       border-radius: 0.5rem;
       background-color: #fff;
       color: #000;
@@ -110,11 +115,17 @@
     transition: all 0.3s ease;
   
     div {
-      width: 50px;
+      width: 100px;
       height: 50px;
-      border-radius: 50%;
+      border-radius: 15px;
       background-color: rgba(0, 0, 0, 0.5);
       color: #fff;
+      text-decoration: none;
+      a{
+         text-decoration: none;
+         border-bottom: none;
+      }
+     
   
       margin: 1rem;
       font-family: var(--font-base);
@@ -131,7 +142,7 @@
   }
   
   .app__work-content {
-    padding: 0.5rem;
+    // padding: 0.5rem;
     width: 100%;
     position: relative;
     flex-direction: column;

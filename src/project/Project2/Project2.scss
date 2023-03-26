@@ -1,0 +1,38 @@
+.pj2, .pj4{
+
+  
+    img{
+        width: 900px;
+    }
+    .left-content{
+        padding-right: 2rem;
+   
+    }
+
+    .right-content-2{
+
+        @media screen and (max-width: 1200px){   
+            
+            img{
+                width: 80vw;
+            }
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            flex-wrap: wrap;
+
+             
+          }
+         color: rgb(0, 0, 0);
+         height: 50vh;
+        
+
+        
+      
+          }
+
+        
+     }
+
+
+

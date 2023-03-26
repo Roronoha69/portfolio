@@ -38,12 +38,12 @@ const Work = () => {
 
   return (
     <>
-      <h2 className="head-text" id="xprience">All my <span>Project</span> Started from</h2>
-      <h2 className="head-text" ><span>Scratch</span> Without <span>any Tutorial</span></h2>
+      <h2 className="head-text" id="xprience">Mes derniers <span>projets</span> réalisés en</h2>
+      <h2 className="head-text" ><span>total autonomie</span> <span></span></h2>
 
 
       <div className="app__work-filter">
-        {[ 'Web 3.0', 'Web 2.0', 'All'].map((item, index) => (
+        {[ 'Blockchain', 'Backend', 'Frontend', 'Full stack', 'All'].map((item, index) => (
           <div
             key={index}
             onClick={() => handleWorkFilter(item)}
@@ -60,6 +60,7 @@ const Work = () => {
         className="app__work-portfolio"
       >
         {filterWork.map((work, index) => (
+          <a href={work.projectLink}>
           <div className="app__work-item app__flex" key={index}>
             <div
               className="app__work-img app__flex"
@@ -71,7 +72,7 @@ const Work = () => {
                 transition={{ duration: 0.25, ease: 'easeInOut', staggerChildren: 0.5 }}
                 className="app__work-hover app__flex"
               >
-                <a href={work.projectLink} target="_blank" rel="noreferrer">
+                <a href={work.projectLink}>
 
                   <motion.div
                     whileInView={{ scale: [0, 1] }}
@@ -79,10 +80,10 @@ const Work = () => {
                     transition={{ duration: 0.25 }}
                     className="app__flex"
                   >
-                    <AiFillEye />
+                    Détails
                   </motion.div>
                 </a>
-                <a href={work.codeLink} target="_blank" rel="noreferrer">
+                {/* <a href={work.codeLink} target="_blank" rel="noreferrer">
                   <motion.div
                     whileInView={{ scale: [0, 1] }}
                     whileHover={{ scale: [1, 0.90] }}
@@ -91,7 +92,7 @@ const Work = () => {
                   >
                     <AiFillGithub />
                   </motion.div>
-                </a>
+                </a> */}
               </motion.div>
             </div>
 
@@ -104,6 +105,7 @@ const Work = () => {
               </div>
             </div>
           </div>
+          </a>
         ))}
       </motion.div>
     </>
