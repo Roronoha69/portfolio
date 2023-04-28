@@ -1,6 +1,6 @@
 import React from 'react'
 
-import {About, Footer, Header, Skills, Testimonial, Work} from './container'
+import {About, Footer, Header, Skills, Testimonial, Work, Work2} from './container'
 import {Project1, Project2, Project3, Project4, Cv } from './project' 
 
 import {Route, Routes, BrowserRouter} from "react-router-dom";
@@ -31,12 +31,18 @@ const App = () => {
             <Header/>
             </div>
 
-            <div className="container">
-            <Skills/>
-            </div>
+            
 
             <div className="container">
             <Work/>
+            </div>
+
+            
+            <div className="container">
+            <Work2/>
+            </div>
+            <div className="container">
+            <Skills/>
             </div>
 
             <div className="container">
